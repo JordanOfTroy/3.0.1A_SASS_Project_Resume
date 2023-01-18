@@ -84,38 +84,68 @@ header {
   justify-content: start;
 }
 .heroDiv > * {
+  border: solid yellow 2px;
   display: flex;
   justify-content: center;
 }
 .heroDiv .imgDiv {
   width: 40%;
+  height: 100%;
   align-items: center;
+  justify-content: center;
 }
-.heroDiv .imgDiv #profileImage {
-  background-image: url("../Images/amoinite.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.heroDiv .imgDiv img {
   width: 70%;
-  aspect-ratio: 1/1;
   border-radius: 100%;
-  border: solid #7B7B7B 2px;
 }
-.heroDiv #heroText {
+.heroDiv .textDiv {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.heroDiv .textDiv #heroText {
+  border: solid green 2px;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #7B7B7B;
+  background-color: rgba(123, 123, 123, 0.5);
   padding: 2em;
-  border: solid #7B7B7B 2px;
+  border-radius: 1px;
 }
-.heroDiv #heroText > * {
+.heroDiv .textDiv #heroText > * {
   color: #FFFEFE;
 }
-.heroDiv #heroText h1 {
+.heroDiv .textDiv #heroText h1 {
   font-size: 4em;
   text-transform: uppercase;
   margin-bottom: 0.5em;
 }
-.heroDiv #heroText h2 {
+.heroDiv .textDiv #heroText h2 {
   font-size: 1.25em;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  border: solid blue 2px;
+  width: 100%;
+}
+.infoSection .infoCol {
+  border: solid red 2px;
+}
+.infoSection #personalCol {
+  width: 40%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.infoSection #expCol {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }/*# sourceMappingURL=style.css.map */

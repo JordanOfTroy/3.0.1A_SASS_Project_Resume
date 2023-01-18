@@ -1,0 +1,27 @@
+@mixin regH1 {
+    font-size: 4em;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+
+@mixin twoColRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+@mixin leftColFlex {
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin rightColFlex {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}

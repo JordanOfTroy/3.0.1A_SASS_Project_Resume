@@ -1,4 +1,6 @@
 @import './CSS/assets/colors.scss';
+@import './CSS/assets/sizing.scss';
+@import './CSS/assets/mixins.scss';
 
 
 // =-=-=-=-=-=-=-= ^^^ Imports NO TOUCHIE!!! ^^^ =-=-=-=-=-=-=-=
@@ -84,41 +86,62 @@ header {
     align-items: center;
     justify-content: start;
     & > * {
+        border: $tbY;
         display: flex;
         justify-content: center;
     }
     .imgDiv {
-        width: 40%;
-        align-items: center;
-        #profileImage {
-            background-image: url('../Images/amoinite.jpeg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        @include leftColFlex;
+        // width: 40%;
+        // height: 100%;
+        // align-items: center;
+        // justify-content: center;
+        img {
             width: 70%;
-            aspect-ratio: 1/1;
             border-radius: 100%;
-            // box-shadow: $mainShadow;
-            border: solid $grey 2px;
+        }
+    }
+    .textDiv {
+        @include rightColFlex;
+        // width: 60%;
+        // height: 100%;
+        // display: flex;
+        // align-items: center;
+        // justify-content: start;
+        #heroText {
+            border: $tbG;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: $greyAlpha;
+            padding: 2em;
+            border-radius: $stdBorRad;
+            & > * {
+                color: $white1;
+            }
+            h1 {
+                @include regH1;
+            }
+            h2 {
+                font-size: 1.25em;
+            }
+        }
+    }
+}
 
-        }
+.infoSection {
+    @include twoColRow;
+    border: $tbB;
+    width: 100%;
+    .infoCol {
+        border: $tbR;
+        // width: 50%;
     }
-    #heroText {
-        flex-direction: column;
-        align-items: flex-start;
-        background-color: $dkGreen;
-        padding: 2em;
-        border: solid $grey 2px;
-        & > * {
-            color: $white1;
-        }
-        h1 {
-            font-size: 4em;
-            text-transform: uppercase;
-            margin-bottom: .5em;
-        }
-        h2 {
-            font-size: 1.25em;
-        }
+    #personalCol {
+        @include leftColFlex;
     }
+    #expCol {
+        @include rightColFlex;
+    }
+
+    
 }
