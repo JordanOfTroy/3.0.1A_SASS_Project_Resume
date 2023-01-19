@@ -75,7 +75,7 @@ header {
 .heroDiv {
   width: 100%;
   height: 50vh;
-  background-image: url("../Images/trilobites.jpeg");
+  background-image: url("../Images/flyingFossil.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,19 +88,21 @@ header {
   justify-content: center;
 }
 .heroDiv .imgDiv {
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 1em;
 }
 .heroDiv .imgDiv img {
-  width: 70%;
+  width: 75%;
   border-radius: 100%;
-  box-shadow: 5px 5px 31px 4px rgba(123, 123, 123, 0.5);
 }
 .heroDiv .textDiv {
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -118,6 +120,7 @@ header {
   font-size: 4em;
   text-transform: uppercase;
   margin-bottom: 0.5em;
+  font-family: Helvetica, sans-serif;
 }
 .heroDiv .textDiv #heroText h2 {
   color: #f6f9f3;
@@ -125,6 +128,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: bold;
+  font-family: Helvetica, sans-serif;
 }
 
 .infoSection {
@@ -138,7 +142,7 @@ header {
   padding: 2em 3em;
 }
 .infoSection #personalCol {
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,7 +150,7 @@ header {
   background-color: #E1EAD8;
 }
 .infoSection #expCol {
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,15 +166,13 @@ header {
   justify-content: center;
   margin-bottom: 2em;
 }
-.card .cardTitle {
-  letter-spacing: 0.25em;
-}
 .card h2 {
   color: #7B7B7B;
   font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
+  font-family: Helvetica, sans-serif;
 }
 .card .shortBar {
   width: 4em;
@@ -181,17 +183,20 @@ header {
   font-size: 1.2em;
   font-weight: 300;
   color: #7B7B7B;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .card .cardList {
   font-size: 1.2em;
   font-weight: 300;
   color: #7B7B7B;
+  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 1.5em;
 }
 .card .cardList h3 {
   font-size: 1em;
   font-weight: 300;
   color: #7B7B7B;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .card .cardList h3 .compName {
   font-weight: bold;
@@ -204,4 +209,8 @@ header {
 }
 .card .cardList .expColList {
   list-style: disc;
+}
+.card .cardList i {
+  width: 1em;
+  margin-right: 0.5em;
 }/*# sourceMappingURL=style.css.map */

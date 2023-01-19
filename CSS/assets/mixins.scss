@@ -3,6 +3,7 @@
     font-size: 4em;
     text-transform: uppercase;
     margin-bottom: .5em;
+    font-family: $fontFam2;  
 }
 
 @mixin regH2($color, $weight) {
@@ -11,12 +12,14 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: $weight;
+    font-family: $fontFam2;  
 }
 
 @mixin regP($size, $weight, $color) {
     font-size: $size;
     font-weight: $weight;
-    color: $color
+    color: $color;
+    font-family: $fontFam1;   
 }
 
 @mixin twoColRow {
