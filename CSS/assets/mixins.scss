@@ -13,6 +13,12 @@
     font-weight: $weight;
 }
 
+@mixin regP($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color
+}
+
 @mixin twoColRow {
     display: flex;
     flex-direction: row;
@@ -43,6 +49,6 @@
 
 @mixin chonkBar($width, $thickness, $color) {
     width: $width;
-    margin-left: 0px;
+    margin: 1em 0em;
     border: $thickness solid $color;
 }

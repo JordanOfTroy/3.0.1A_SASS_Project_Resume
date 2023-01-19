@@ -123,22 +123,47 @@ header {
     }
     #personalCol {
         @include flexMeDaddy($lCW, column, center, flex-start);
-        background-color: $ltGreen
+        background-color: $ltGreen;
     }
     #expCol {
         @include flexMeDaddy($rCW, column, center, center);
-        background-color: $green
+        background-color: $green;
     }
 }
 
 .card {
     @include flexMeDaddy(100%, column, flex-start, center);
     @include card;
+    .cardTitle {
+        letter-spacing: .25em;
+    }
     h2 {
         @include regH2($grey, 700);
 
     }
     .shortBar{
         @include chonkBar(4em, .15em, $grey);
+    }
+    p {
+        @include regP(1.2em, 300, $grey);
+    }
+    .cardList {
+        @include regP(1.2em, 300, $grey);
+        margin-bottom: 1.5em;
+        h3 {
+            @include regP(1em, 300, $grey);
+            .compName {
+                font-weight: bold;
+            }
+        }
+        h4 {
+            margin-bottom: 1em;
+        }
+        li {
+            margin-bottom: .5em;
+        }
+        .expColList {
+            list-style: disc;
+        }
     }
 }
