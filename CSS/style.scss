@@ -78,7 +78,7 @@ header {
 .heroDiv {
     width: 100%;
     height: 50vh;
-    background-image: url('../Images/whiteRoses.jpeg');
+    background-image: url('../Images/trilobites.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,43 +86,30 @@ header {
     align-items: center;
     justify-content: start;
     & > * {
-        border: $tbY;
         display: flex;
         justify-content: center;
     }
     .imgDiv {
-        @include leftColFlex;
-        // width: 40%;
-        // height: 100%;
-        // align-items: center;
-        // justify-content: center;
+        @include flexMeDaddy($lCW, column, center, center);
         img {
             width: 70%;
             border-radius: 100%;
+            box-shadow: $mainShadow
         }
     }
     .textDiv {
-        @include rightColFlex;
-        // width: 60%;
-        // height: 100%;
-        // display: flex;
-        // align-items: center;
-        // justify-content: start;
+        @include flexMeDaddy($rCW, row, center, flex-start);
         #heroText {
-            border: $tbG;
             flex-direction: column;
             align-items: flex-start;
-            background-color: $greyAlpha;
-            padding: 2em;
-            border-radius: $stdBorRad;
             & > * {
                 color: $white1;
             }
             h1 {
-                @include regH1;
+                @include regH1($white);
             }
             h2 {
-                font-size: 1.25em;
+                @include regH2($white, bold);
             }
         }
     }
@@ -130,18 +117,23 @@ header {
 
 .infoSection {
     @include twoColRow;
-    border: $tbB;
     width: 100%;
-    .infoCol {
-        border: $tbR;
-        // width: 50%;
-    }
+    padding: 1em;
     #personalCol {
-        @include leftColFlex;
+        @include flexMeDaddy($lCW, column, center, center);
     }
     #expCol {
-        @include rightColFlex;
+        @include flexMeDaddy($rCW, column, center, center);
     }
+}
 
-    
+.card {
+    @include flexMeDaddy(100%, column, flex-start, center);
+    h2 {
+        @include regH2($grey, 700);
+
+    }
+    .shortBar{
+        @include chonkBar(4em, .15em, $grey);
+    }
 }

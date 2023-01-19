@@ -1,7 +1,15 @@
-@mixin regH1 {
+@mixin regH1($color) {
+    color: $color;
     font-size: 4em;
     text-transform: uppercase;
     margin-bottom: .5em;
+}
+
+@mixin regH2($color, $weight) {
+    color: $color;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-weight: $weight;
 }
 
 @mixin twoColRow {
@@ -14,14 +22,25 @@
 @mixin leftColFlex {
     width: 40%;
     height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@mixin rightColFlex {
-    width: 60%;
-    height: 100%;
+@mixin flexMeDaddy($width, $direction, $align, $justify) {
+    width: $width;
     display: flex;
-    align-items: center;
-    justify-content: start;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin card {
+    border: $tbY;
+}
+
+@mixin chonkBar($width, $thickness, $color) {
+    width: $width;
+    margin-left: 0px;
+    border: $thickness solid $color;
 }
