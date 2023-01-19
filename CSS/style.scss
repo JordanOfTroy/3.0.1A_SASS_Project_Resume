@@ -118,8 +118,11 @@ header {
 }
 
 .infoSection {
-    @include twoColRow;
+    @include twoCols(row);
     width: 100%;
+    @media (max-width: $breakpointSmall) {
+        @include twoCols(column);
+    }
     .infoCol {
         padding: 2em 3em;
     }

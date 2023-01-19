@@ -1,6 +1,7 @@
 @mixin regH1($color) {
     color: $color;
     font-size: 4em;
+    font-weight: bold;
     text-transform: uppercase;
     margin-bottom: .5em;
     font-family: $fontFam2;  
@@ -22,9 +23,9 @@
     font-family: $fontFam1;   
 }
 
-@mixin twoColRow {
+@mixin twoCols ($direction) {
     display: flex;
-    flex-direction: row;
+    flex-direction: $direction;
     // align-items: flex-start;
     align-items: stretch;
     justify-content: flex-start;

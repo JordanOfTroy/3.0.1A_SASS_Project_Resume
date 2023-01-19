@@ -118,6 +118,7 @@ header {
 .heroDiv .textDiv #heroText h1 {
   color: #f6f9f3;
   font-size: 4em;
+  font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0.5em;
   font-family: Helvetica, sans-serif;
@@ -137,6 +138,14 @@ header {
   align-items: stretch;
   justify-content: flex-start;
   width: 100%;
+}
+@media (max-width: 400px) {
+  .infoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
 }
 .infoSection .infoCol {
   padding: 2em 3em;
