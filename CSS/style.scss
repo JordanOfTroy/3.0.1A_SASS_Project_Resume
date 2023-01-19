@@ -92,7 +92,10 @@ header {
     .imgDiv {
         @include flexMeDaddy($lCW, column, center, center);
         object-fit: contain;
-        padding: 1em;;
+        padding: 1em;
+        @media (max-width: $breakpointSmall) {
+            display: none;
+        }
         img {
             width: 75%;
             border-radius: 100%;
@@ -118,21 +121,27 @@ header {
 }
 
 .infoSection {
-    @include twoCols(row);
+    @include twoCols(row, stretch, flex-start);
     width: 100%;
     @media (max-width: $breakpointSmall) {
-        @include twoCols(column);
-    }
-    .infoCol {
-        padding: 2em 3em;
+        @include twoCols(column, stretch, center);
     }
     #personalCol {
         @include flexMeDaddy($lCW, column, center, flex-start);
         background-color: $ltGreen;
+        @media (max-width: $breakpointSmall) {
+            width: $smallBPCM;
+        }
     }
     #expCol {
         @include flexMeDaddy($rCW, column, center, center);
         background-color: $green;
+        @media (max-width: $breakpointSmall) {
+            width: $smallBPCM;
+        }
+    }
+    .infoCol {
+        padding: 2em 3em;
     }
 }
 

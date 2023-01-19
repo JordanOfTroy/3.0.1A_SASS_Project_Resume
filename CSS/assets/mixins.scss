@@ -23,12 +23,11 @@
     font-family: $fontFam1;   
 }
 
-@mixin twoCols ($direction) {
+@mixin twoCols ($direction, $align, $justify) {
     display: flex;
     flex-direction: $direction;
-    // align-items: flex-start;
-    align-items: stretch;
-    justify-content: flex-start;
+    align-items: $align;
+    justify-content: $justify;
 }
 
 @mixin leftColFlex {

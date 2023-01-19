@@ -97,6 +97,11 @@ header {
      object-fit: contain;
   padding: 1em;
 }
+@media (max-width: 400px) {
+  .heroDiv .imgDiv {
+    display: none;
+  }
+}
 .heroDiv .imgDiv img {
   width: 75%;
   border-radius: 100%;
@@ -144,11 +149,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    justify-content: flex-start;
+    justify-content: center;
   }
-}
-.infoSection .infoCol {
-  padding: 2em 3em;
 }
 .infoSection #personalCol {
   width: 40%;
@@ -158,6 +160,11 @@ header {
   justify-content: flex-start;
   background-color: #E1EAD8;
 }
+@media (max-width: 400px) {
+  .infoSection #personalCol {
+    width: 100%;
+  }
+}
 .infoSection #expCol {
   width: 60%;
   display: flex;
@@ -165,6 +172,14 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #99A29C;
+}
+@media (max-width: 400px) {
+  .infoSection #expCol {
+    width: 100%;
+  }
+}
+.infoSection .infoCol {
+  padding: 2em 3em;
 }
 
 .card {
