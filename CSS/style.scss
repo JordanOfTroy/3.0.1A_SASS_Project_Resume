@@ -118,12 +118,16 @@ header {
 .infoSection {
     @include twoColRow;
     width: 100%;
-    padding: 1em;
+    .infoCol {
+        padding: 2em 3em;
+    }
     #personalCol {
-        @include flexMeDaddy($lCW, column, center, center);
+        @include flexMeDaddy($lCW, column, center, flex-start);
+        background-color: $ltGreen
     }
     #expCol {
         @include flexMeDaddy($rCW, column, center, center);
+        background-color: $green
     }
 }
 

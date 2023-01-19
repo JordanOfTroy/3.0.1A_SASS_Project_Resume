@@ -122,24 +122,28 @@ header {
 .heroDiv .textDiv #heroText h2 {
   color: #f6f9f3;
   font-size: 1.5em;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: bold;
 }
 
 .infoSection {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: flex-start;
   width: 100%;
-  padding: 1em;
+}
+.infoSection .infoCol {
+  padding: 2em 3em;
 }
 .infoSection #personalCol {
   width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  background-color: #E1EAD8;
 }
 .infoSection #expCol {
   width: 60%;
@@ -147,6 +151,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #99A29C;
 }
 
 .card {
@@ -159,7 +164,8 @@ header {
 .card h2 {
   color: #7B7B7B;
   font-size: 1.5em;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: 700;
 }
 .card .shortBar {

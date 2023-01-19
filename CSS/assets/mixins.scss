@@ -8,15 +8,17 @@
 @mixin regH2($color, $weight) {
     color: $color;
     font-size: 1.5em;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     font-weight: $weight;
 }
 
 @mixin twoColRow {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    // align-items: flex-start;
+    align-items: stretch;
+    justify-content: flex-start;
 }
 
 @mixin leftColFlex {
