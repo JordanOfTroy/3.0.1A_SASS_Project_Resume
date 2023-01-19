@@ -133,6 +133,7 @@ header {
 
 .card {
     @include flexMeDaddy(100%, column, flex-start, center);
+    @include card;
     h2 {
         @include regH2($grey, 700);
 

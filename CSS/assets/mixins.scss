@@ -38,7 +38,7 @@
 }
 
 @mixin card {
-    border: $tbY;
+    margin-bottom: 2em;
 }
 
 @mixin chonkBar($width, $thickness, $color) {
