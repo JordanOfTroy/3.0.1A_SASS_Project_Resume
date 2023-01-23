@@ -15,13 +15,15 @@
 <body id="top">
     <main>
         <header >
-            <div class="burger"><i class="fa-solid fa-bars fa-xl"></i></div>
-            <ul class="navMenu">
-                <li><a href="#profile">Profile</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#workExp">Experience</a></li>
+            <div  class="burger">
+                <i id="burgerIcon" class="fa-solid fa-bars fa-xl" onClick="openMobileMenu()"></i>
+            </div>
+            <ul id="navMenu" class="navMenu">
+                <li><a href="#profile" onclick="closeMobileMenu()">Profile</a></li>
+                <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+                <li><a href="#education" onclick="closeMobileMenu()">Education</a></li>
+                <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+                <li><a href="#workExp" onclick="closeMobileMenu()">Experience</a></li>
             </ul>
         </header>
         <div class="heroDiv" >
@@ -119,6 +121,29 @@
             </div>
         </div>
         <footer></footer>
-    </main>    
+    </main>
+    <script>
+        
+        
+        // document.getElementById("burgerIcon").addEventListener('click', event => {
+        //     console.log('i am the working?')
+        // })
+
+        const openMobileMenu = () => {
+            let navMenu = document.getElementById('navMenu')
+            navMenu.classList.add('navMenuShowing')
+            navMenu.classList.remove('navMenu')
+        }    
+
+        const closeMobileMenu = () => {
+            let navMenu = document.getElementById('navMenu')
+            navMenu.classList.remove('navMenuShowing')
+            navMenu.classList.add('navMenu')
+        }    
+        
+
+
+
+    </script>   
 </body>
 </html>

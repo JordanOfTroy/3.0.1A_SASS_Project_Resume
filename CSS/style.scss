@@ -78,13 +78,14 @@ header {
     display: none;
     @media (max-width: $breakpointSmall) {
         display: block;
-        // .navMenu {
-        //     position: absolute;
-        //     left: calc(120vw - 3.5em);
-        //     top: calc(30vw - 4em);
-            
-        // }
         .navMenu {
+            display: none;
+            position: absolute;
+            left: calc(120vw - 3.5em);
+            top: calc(30vw - 4em);
+            
+        }
+        .navMenuShowing {
             position: absolute;
             left: calc(65vw - 3.5em); // moves menu into view
             top: calc(24vw - 4em);

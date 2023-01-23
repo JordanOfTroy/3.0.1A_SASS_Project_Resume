@@ -81,6 +81,12 @@ header {
     display: block;
   }
   header .navMenu {
+    display: none;
+    position: absolute;
+    left: calc(120vw - 3.5em);
+    top: calc(30vw - 4em);
+  }
+  header .navMenuShowing {
     position: absolute;
     left: calc(65vw - 3.5em);
     top: calc(24vw - 4em);
@@ -89,10 +95,10 @@ header {
     box-shadow: 5px 5px 31px 4px rgba(123, 123, 123, 0.5);
     padding: 1em;
   }
-  header .navMenu li {
+  header .navMenuShowing li {
     margin: 1.5em;
   }
-  header .navMenu li a {
+  header .navMenuShowing li a {
     font-size: 1.5em;
     font-family: Helvetica, sans-serif;
     text-decoration: none;
