@@ -78,17 +78,33 @@ header {
     display: none;
     @media (max-width: $breakpointSmall) {
         display: block;
-        .navMenu {
-            border: $tbR;
-            position: absolute;
-            left: calc(100vw - 3.5em);
-            top: calc(50vw - 4em);
+        // .navMenu {
+        //     position: absolute;
+        //     left: calc(120vw - 3.5em);
+        //     top: calc(30vw - 4em);
             
+        // }
+        .navMenu {
+            position: absolute;
+            left: calc(65vw - 3.5em); // moves menu into view
+            top: calc(24vw - 4em);
+            background-color: $ltGreen;
+            color: $black;
+            box-shadow: $mainShadow;
+            padding: 1em;
+            li {
+                margin: 1.5em;
+                a {
+                    font-size: 1.5em;
+                    font-family: $fontFam2;
+                    text-decoration: none;
+                }
+            }
         }
         .burger {
             position: absolute;
             left: calc(100vw - 3.5em);
-            top: calc(50vw - 4em);
+            top: calc(30vw - 4em);
             color: $white;
 
         }

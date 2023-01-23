@@ -62,7 +62,7 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
-@media (max-width: 400px) {
+@media (max-width: 413px) {
   body {
     padding-top: 2em;
   }
@@ -76,20 +76,31 @@ body main {
 header {
   display: none;
 }
-@media (max-width: 400px) {
+@media (max-width: 413px) {
   header {
     display: block;
   }
   header .navMenu {
-    border: solid red 2px;
     position: absolute;
-    left: calc(100vw - 3.5em);
-    top: calc(50vw - 4em);
+    left: calc(65vw - 3.5em);
+    top: calc(24vw - 4em);
+    background-color: #E1EAD8;
+    color: #252525;
+    box-shadow: 5px 5px 31px 4px rgba(123, 123, 123, 0.5);
+    padding: 1em;
+  }
+  header .navMenu li {
+    margin: 1.5em;
+  }
+  header .navMenu li a {
+    font-size: 1.5em;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
   }
   header .burger {
     position: absolute;
     left: calc(100vw - 3.5em);
-    top: calc(50vw - 4em);
+    top: calc(30vw - 4em);
     color: #f6f9f3;
   }
 }
@@ -119,7 +130,7 @@ header {
      object-fit: contain;
   padding: 1em;
 }
-@media (max-width: 400px) {
+@media (max-width: 413px) {
   .heroDiv .imgDiv {
     display: none;
   }
@@ -135,7 +146,7 @@ header {
   align-items: center;
   justify-content: flex-start;
 }
-@media (max-width: 400px) {
+@media (max-width: 413px) {
   .heroDiv .textDiv {
     width: 100%;
     display: flex;
@@ -173,7 +184,7 @@ header {
   justify-content: flex-start;
   width: 100%;
 }
-@media (max-width: 400px) {
+@media (max-width: 413px) {
   .infoSection {
     display: flex;
     flex-direction: column;
@@ -184,7 +195,7 @@ header {
 .infoSection .infoCol {
   padding: 2em 3em;
 }
-@media (max-width: 400px) {
+@media (max-width: 413px) {
   .infoSection .infoCol {
     padding: 2em;
   }
@@ -197,7 +208,7 @@ header {
   justify-content: flex-start;
   background-color: #E1EAD8;
 }
-@media (max-width: 400px) {
+@media (max-width: 413px) {
   .infoSection #personalCol {
     width: 100%;
   }
@@ -210,7 +221,7 @@ header {
   justify-content: center;
   background-color: #99A29C;
 }
-@media (max-width: 400px) {
+@media (max-width: 413px) {
   .infoSection #expCol {
     width: 100%;
   }
