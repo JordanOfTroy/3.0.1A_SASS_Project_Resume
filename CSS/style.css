@@ -76,6 +76,23 @@ body main {
 header {
   display: none;
 }
+@media (max-width: 400px) {
+  header {
+    display: block;
+  }
+  header .navMenu {
+    border: solid red 2px;
+    position: absolute;
+    left: calc(100vw - 3.5em);
+    top: calc(50vw - 4em);
+  }
+  header .burger {
+    position: absolute;
+    left: calc(100vw - 3.5em);
+    top: calc(50vw - 4em);
+    color: #f6f9f3;
+  }
+}
 
 .heroDiv {
   width: 100%;

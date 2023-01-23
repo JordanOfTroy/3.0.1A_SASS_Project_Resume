@@ -76,6 +76,24 @@ body {
 
 header {
     display: none;
+    @media (max-width: $breakpointSmall) {
+        display: block;
+        .navMenu {
+            border: $tbR;
+            position: absolute;
+            left: calc(100vw - 3.5em);
+            top: calc(50vw - 4em);
+            
+        }
+        .burger {
+            position: absolute;
+            left: calc(100vw - 3.5em);
+            top: calc(50vw - 4em);
+            color: $white;
+
+        }
+        
+    }
 }
 
 .heroDiv {
@@ -102,7 +120,7 @@ header {
         img {
             width: 75%;
             border-radius: 100%;
-            // box-shadow: $mainShadow
+            
         }
     }
     .textDiv {
