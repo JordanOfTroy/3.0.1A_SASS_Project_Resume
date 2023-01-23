@@ -235,6 +235,22 @@ header {
   justify-content: center;
   margin-bottom: 2em;
 }
+.card .cardTitleSection a {
+  display: none;
+}
+@media (max-width: 413px) {
+  .card .cardTitleSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card .cardTitleSection a {
+    display: inline;
+    color: #7B7B7B;
+  }
+}
 .card h2 {
   color: #7B7B7B;
   font-size: 1.5em;

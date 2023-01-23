@@ -189,8 +189,19 @@ header {
 .card {
     @include flexMeDaddy(100%, column, flex-start, center);
     @include card;
-    .cardTitle {
-        // letter-spacing: .2em;
+    .cardTitleSection {
+        a {
+            display: none;
+        }
+    }
+    @media (max-width: $breakpointSmall) {
+        .cardTitleSection {
+            @include flexMeDaddy (100%, row, center, space-between);
+            a {
+                display: inline;
+                color: $grey;
+            }
+        }
     }
     h2 {
         @include regH2($grey, 700);
