@@ -55,15 +55,15 @@ table {
 }
 
 body {
-  background-color: #CCD1C9;
-  background: linear-gradient(52deg, rgb(204, 209, 201) 0%, rgb(226, 182, 167) 100%);
+  background-color: #E8EBE4;
+  background: linear-gradient(52deg, #E8EBE4 33%, #87A330 50%, #E8EBE4 66%);
   width: 100vw;
   padding-top: 3em;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
-@media (max-width: 413px) {
+@media (max-width: 750px) {
   body {
     padding-top: 2em;
   }
@@ -77,13 +77,13 @@ body main {
 header {
   display: none;
 }
-@media (max-width: 413px) {
+@media (max-width: 750px) {
   header {
     display: block;
   }
   header .navMenu {
     display: none;
-    position: absolute;
+    position: relative;
     left: calc(120vw - 3.5em);
     top: calc(30vw - 4em);
   }
@@ -91,10 +91,11 @@ header {
     position: absolute;
     left: calc(65vw - 3.5em);
     top: calc(24vw - 4em);
-    background-color: #CCD1C9;
-    color: #484846;
+    background-color: #E8EBE4;
+    color: #0D1321;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     padding: 1em;
+    border-left: solid 2px #0D1321;
   }
   header .navMenuShowing li {
     margin: 1.5em;
@@ -103,12 +104,13 @@ header {
     font-size: 1.5em;
     font-family: Helvetica, sans-serif;
     text-decoration: none;
+    color: #0D1321;
   }
   header .burger {
     position: absolute;
     left: calc(100vw - 3.5em);
     top: calc(30vw - 4em);
-    color: #CCD1C9;
+    color: #E8EBE4;
   }
 }
 
@@ -122,7 +124,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: start;
-  border-bottom: solid 2px #E2B6A7;
+  border-bottom: solid 2px #87A330;
 }
 .heroDiv > * {
   display: flex;
@@ -138,7 +140,7 @@ header {
      object-fit: contain;
   padding: 1em;
 }
-@media (max-width: 413px) {
+@media (max-width: 750px) {
   .heroDiv .imgDiv {
     display: none;
   }
@@ -154,7 +156,7 @@ header {
   align-items: center;
   justify-content: flex-start;
 }
-@media (max-width: 413px) {
+@media (max-width: 750px) {
   .heroDiv .textDiv {
     width: 100%;
     display: flex;
@@ -169,7 +171,7 @@ header {
   align-items: flex-start;
 }
 .heroDiv .textDiv #heroText h1 {
-  color: #CCD1C9;
+  color: #E8EBE4;
   font-size: 4em;
   font-weight: bold;
   text-transform: uppercase;
@@ -177,7 +179,7 @@ header {
   font-family: Helvetica, sans-serif;
 }
 .heroDiv .textDiv #heroText h2 {
-  color: #CCD1C9;
+  color: #E8EBE4;
   font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -192,7 +194,7 @@ header {
   justify-content: flex-start;
   width: 100%;
 }
-@media (max-width: 413px) {
+@media (max-width: 750px) {
   .infoSection {
     display: flex;
     flex-direction: column;
@@ -203,7 +205,7 @@ header {
 .infoSection .infoCol {
   padding: 2em 3em;
 }
-@media (max-width: 413px) {
+@media (max-width: 750px) {
   .infoSection .infoCol {
     padding: 2em;
   }
@@ -214,11 +216,10 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #444C57;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  background-color: #1D2D44;
 }
 .infoSection #personalCol h2 {
-  color: #CCD1C9;
+  color: #E8EBE4;
   font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -228,15 +229,15 @@ header {
 .infoSection #personalCol .shortBar {
   width: 4em;
   margin: 1em 0em;
-  border: 0.15em solid #CCD1C9;
+  border: 0.15em solid #E8EBE4;
 }
 .infoSection #personalCol p {
   font-size: 1.2em;
   font-weight: 300;
-  color: #CCD1C9;
+  color: #E8EBE4;
   font-family: Arial, Helvetica, sans-serif;
 }
-@media (max-width: 413px) {
+@media (max-width: 750px) {
   .infoSection #personalCol {
     width: 100%;
   }
@@ -244,8 +245,11 @@ header {
 .infoSection #personalCol .cardList {
   font-size: 1.2em;
   font-weight: 300;
-  color: #CCD1C9;
+  color: #E8EBE4;
   font-family: Arial, Helvetica, sans-serif;
+}
+.infoSection #personalCol .upArrow {
+  color: #E8EBE4;
 }
 .infoSection #expCol {
   width: 60%;
@@ -253,10 +257,10 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #CEC8B8;
+  background-color: #748CAB;
 }
 .infoSection #expCol h2 {
-  color: #484846;
+  color: #0D1321;
   font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -266,15 +270,15 @@ header {
 .infoSection #expCol .shortBar {
   width: 4em;
   margin: 1em 0em;
-  border: 0.15em solid #484846;
+  border: 0.15em solid #0D1321;
 }
 .infoSection #expCol p {
   font-size: 1.2em;
   font-weight: 300;
-  color: #484846;
+  color: #0D1321;
   font-family: Arial, Helvetica, sans-serif;
 }
-@media (max-width: 413px) {
+@media (max-width: 750px) {
   .infoSection #expCol {
     width: 100%;
   }
@@ -282,8 +286,11 @@ header {
 .infoSection #expCol .cardList {
   font-size: 1.2em;
   font-weight: 300;
-  color: #484846;
+  color: #0D1321;
   font-family: Arial, Helvetica, sans-serif;
+}
+.infoSection #expCol .upArrow {
+  color: #0D1321;
 }
 
 .card {
@@ -297,7 +304,7 @@ header {
 .card .cardTitleSection a {
   display: none;
 }
-@media (max-width: 413px) {
+@media (max-width: 750px) {
   .card .cardTitleSection {
     width: 100%;
     display: flex;
@@ -315,7 +322,7 @@ header {
 .card .cardList h3 {
   font-size: 1em;
   font-weight: 300;
-  color: #484846;
+  color: #0D1321;
   font-family: Arial, Helvetica, sans-serif;
 }
 .card .cardList h3 .compName {

@@ -81,7 +81,7 @@ header {
         display: block;
         .navMenu {
             display: none;
-            position: absolute;
+            position: relative;
             left: calc(120vw - 3.5em);
             top: calc(30vw - 4em);
             
@@ -94,12 +94,14 @@ header {
             color: $black;
             box-shadow: $mainShadow;
             padding: 1em;
+            border-left: solid 2px $black;
             li {
                 margin: 1.5em;
                 a {
                     font-size: 1.5em;
                     font-family: $fontFam2;
                     text-decoration: none;
+                    color: $black;
                 }
             }
         }
@@ -176,7 +178,6 @@ header {
     #personalCol {
         @include flexMeDaddy($lCW, column, center, flex-start);
         background-color: $primary;
-        box-shadow: $mainShadow;
         h2 {
             @include regH2($white, 700);
     
@@ -192,6 +193,9 @@ header {
         }
         .cardList{
             @include regP(1.2em, 300, $white);
+        }
+         .upArrow {
+            color: $white;
         }
     }
     #expCol {
@@ -212,6 +216,9 @@ header {
         }
         .cardList{
             @include regP(1.2em, 300, $black);
+        }
+        .upArrow{
+            color: $black;
         }
     }
 }
