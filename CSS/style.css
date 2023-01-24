@@ -56,7 +56,6 @@ table {
 
 body {
   background-color: #E8EBE4;
-  background: linear-gradient(52deg, #E8EBE4 33%, #87A330 50%, #E8EBE4 66%);
   width: 100vw;
   padding-top: 3em;
   display: flex;
