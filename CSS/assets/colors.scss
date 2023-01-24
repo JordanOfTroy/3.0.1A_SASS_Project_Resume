@@ -2,12 +2,26 @@
 
 /* palette source: https://i.pinimg.com/564x/0e/30/ae/0e30ae7686a1e2f5d59cc2a26b401546.jpg */
 
-$white:#f6f9f3;
-$white1: #FFFEFE;
+//Sherwin Williams Sea Salt
+$--white: #CCD1C9;
+$--black: #484846;
+$--blue: #444C57;
+$--tan: #CEC8B8;
+$--pink: #E2B6A7;
+
+$--shadow24: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+$--shadow82: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+$--grad1: linear-gradient(40deg, rgba(206,200,184,1) 0%, rgba(226,182,167,1) 50%, rgba(204,209,201,1) 100%);
+$--grad2: linear-gradient(90deg, rgba(226,182,167,1) 0%, rgba(204,209,201,1) 25%, rgba(206,200,184,1) 49%, rgba(204,209,201,1) 75%, rgba(68,76,87,1) 100%);
+$--grad3: linear-gradient(52deg, rgba(204,209,201,1) 0%, rgba(226,182,167,1) 100%);
+
+$white: $--white;
 $grey:#7B7B7B;
 $greyAlpha: rgba(123, 123, 123, 0.5);
-$black:#252525;
-$ltGreen:#E1EAD8;
-$green:#99A29C;
-$dkGreen:#7B7B7B;
-$mainShadow: 5px 5px 31px 4px $greyAlpha;
+$black: $--black;
+$hiLite: $--pink;
+$primary: $--blue;
+$secondary: $--tan;
+$mainShadow: $--shadow82;
+$mainGradient: $--grad3;

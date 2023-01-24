@@ -55,7 +55,8 @@ table {
 }
 
 body {
-  background-color: #FFFEFE;
+  background-color: #CCD1C9;
+  background: linear-gradient(52deg, rgb(204, 209, 201) 0%, rgb(226, 182, 167) 100%);
   width: 100vw;
   padding-top: 3em;
   display: flex;
@@ -69,7 +70,7 @@ body {
 }
 body main {
   width: 90%;
-  box-shadow: 5px 5px 31px 4px rgba(123, 123, 123, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   border-radius: 1px;
 }
 
@@ -90,9 +91,9 @@ header {
     position: absolute;
     left: calc(65vw - 3.5em);
     top: calc(24vw - 4em);
-    background-color: #E1EAD8;
-    color: #252525;
-    box-shadow: 5px 5px 31px 4px rgba(123, 123, 123, 0.5);
+    background-color: #CCD1C9;
+    color: #484846;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     padding: 1em;
   }
   header .navMenuShowing li {
@@ -107,7 +108,7 @@ header {
     position: absolute;
     left: calc(100vw - 3.5em);
     top: calc(30vw - 4em);
-    color: #f6f9f3;
+    color: #CCD1C9;
   }
 }
 
@@ -121,6 +122,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: start;
+  border-bottom: solid 2px #E2B6A7;
 }
 .heroDiv > * {
   display: flex;
@@ -167,7 +169,7 @@ header {
   align-items: flex-start;
 }
 .heroDiv .textDiv #heroText h1 {
-  color: #f6f9f3;
+  color: #CCD1C9;
   font-size: 4em;
   font-weight: bold;
   text-transform: uppercase;
@@ -175,7 +177,7 @@ header {
   font-family: Helvetica, sans-serif;
 }
 .heroDiv .textDiv #heroText h2 {
-  color: #f6f9f3;
+  color: #CCD1C9;
   font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -212,12 +214,38 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #E1EAD8;
+  background-color: #444C57;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.infoSection #personalCol h2 {
+  color: #CCD1C9;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: Helvetica, sans-serif;
+}
+.infoSection #personalCol .shortBar {
+  width: 4em;
+  margin: 1em 0em;
+  border: 0.15em solid #CCD1C9;
+}
+.infoSection #personalCol p {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #CCD1C9;
+  font-family: Arial, Helvetica, sans-serif;
 }
 @media (max-width: 413px) {
   .infoSection #personalCol {
     width: 100%;
   }
+}
+.infoSection #personalCol .cardList {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #CCD1C9;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .infoSection #expCol {
   width: 60%;
@@ -225,12 +253,37 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #99A29C;
+  background-color: #CEC8B8;
+}
+.infoSection #expCol h2 {
+  color: #484846;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-family: Helvetica, sans-serif;
+}
+.infoSection #expCol .shortBar {
+  width: 4em;
+  margin: 1em 0em;
+  border: 0.15em solid #484846;
+}
+.infoSection #expCol p {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #484846;
+  font-family: Arial, Helvetica, sans-serif;
 }
 @media (max-width: 413px) {
   .infoSection #expCol {
     width: 100%;
   }
+}
+.infoSection #expCol .cardList {
+  font-size: 1.2em;
+  font-weight: 300;
+  color: #484846;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .card {
@@ -254,39 +307,15 @@ header {
   }
   .card .cardTitleSection a {
     display: inline;
-    color: #7B7B7B;
   }
 }
-.card h2 {
-  color: #7B7B7B;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
-  font-family: Helvetica, sans-serif;
-}
-.card .shortBar {
-  width: 4em;
-  margin: 1em 0em;
-  border: 0.15em solid #7B7B7B;
-}
-.card p {
-  font-size: 1.2em;
-  font-weight: 300;
-  color: #7B7B7B;
-  font-family: Arial, Helvetica, sans-serif;
-}
 .card .cardList {
-  font-size: 1.2em;
-  font-weight: 300;
-  color: #7B7B7B;
-  font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 1.5em;
 }
 .card .cardList h3 {
   font-size: 1em;
   font-weight: 300;
-  color: #7B7B7B;
+  color: #484846;
   font-family: Arial, Helvetica, sans-serif;
 }
 .card .cardList h3 .compName {
