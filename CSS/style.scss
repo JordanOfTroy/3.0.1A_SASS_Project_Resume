@@ -1,6 +1,9 @@
-@import './CSS/assets/colors.scss';
-@import './CSS/assets/sizing.scss';
-@import './CSS/assets/mixins.scss';
+@use './assets/colors' as *;
+@use './assets/sizing' as *;
+@use './assets/mixins' as *;
+// @import './CSS/assets/colors.scss';
+// @import './CSS/assets/sizing.scss';
+// @import './CSS/assets/mixins.scss';
 
 
 // =-=-=-=-=-=-=-= ^^^ Imports NO TOUCHIE!!! ^^^ =-=-=-=-=-=-=-=
