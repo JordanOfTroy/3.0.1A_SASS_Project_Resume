@@ -109,7 +109,7 @@ header {
             position: absolute;
             left: calc(100vw - 3.5em);
             top: calc(30vw - 4em);
-            color: $white;
+            color: $primary;
 
         }
         
@@ -119,14 +119,15 @@ header {
 .heroDiv {
     width: 100%;
     height: 50vh;
-    background-image: url('../Images/flyingFossil.jpeg');
+    // background-image: url('../Images/flyingFossil.jpeg');
+    background-image: url('../Images/whiteWaves.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: start;
-    border-bottom: solid 2px $hiLite;
+    border-bottom: solid 2px $primary;
     & > * {
         display: flex;
         justify-content: center;
@@ -134,13 +135,15 @@ header {
     .imgDiv {
         @include flexMeDaddy($lCW, column, center, center);
         object-fit: contain;
-        padding: 1em;
+        // padding: 1em;
+        height: 90%;
         @media (max-width: $breakpointSmall) {
             display: none;
         }
         img {
-            width: 75%;
+            height: 100%;
             border-radius: 100%;
+            overflow: hidden;
             
         }
     }
@@ -154,10 +157,10 @@ header {
             flex-direction: column;
             align-items: flex-start;
             h1 {
-                @include regH1($white);
+                @include regH1($primary);
             }
             h2 {
-                @include regH2($white, bold);
+                @include regH2($secondary, bold);
             }
         }
     }
@@ -177,7 +180,7 @@ header {
     }
     #personalCol {
         @include flexMeDaddy($lCW, column, center, flex-start);
-        background-color: $primary;
+        background-color: $secondary;
         h2 {
             @include regH2($white, 700);
     
@@ -200,7 +203,7 @@ header {
     }
     #expCol {
         @include flexMeDaddy($rCW, column, center, center);
-        background-color: $secondary;
+        background-color: $white;
         h2 {
             @include regH2($black, 700);
     

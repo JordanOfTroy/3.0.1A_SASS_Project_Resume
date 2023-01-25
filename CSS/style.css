@@ -109,21 +109,21 @@ header {
     position: absolute;
     left: calc(100vw - 3.5em);
     top: calc(30vw - 4em);
-    color: #E8EBE4;
+    color: #1D2D44;
   }
 }
 
 .heroDiv {
   width: 100%;
   height: 50vh;
-  background-image: url("../Images/flyingFossil.jpeg");
+  background-image: url("../Images/whiteWaves.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: start;
-  border-bottom: solid 2px #87A330;
+  border-bottom: solid 2px #1D2D44;
 }
 .heroDiv > * {
   display: flex;
@@ -137,7 +137,7 @@ header {
   justify-content: center;
   -o-object-fit: contain;
      object-fit: contain;
-  padding: 1em;
+  height: 90%;
 }
 @media (max-width: 750px) {
   .heroDiv .imgDiv {
@@ -145,8 +145,9 @@ header {
   }
 }
 .heroDiv .imgDiv img {
-  width: 75%;
+  height: 100%;
   border-radius: 100%;
+  overflow: hidden;
 }
 .heroDiv .textDiv {
   width: 60%;
@@ -170,7 +171,7 @@ header {
   align-items: flex-start;
 }
 .heroDiv .textDiv #heroText h1 {
-  color: #E8EBE4;
+  color: #1D2D44;
   font-size: 4em;
   font-weight: bold;
   text-transform: uppercase;
@@ -178,7 +179,7 @@ header {
   font-family: Helvetica, sans-serif;
 }
 .heroDiv .textDiv #heroText h2 {
-  color: #E8EBE4;
+  color: #748CAB;
   font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -215,7 +216,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #1D2D44;
+  background-color: #748CAB;
 }
 .infoSection #personalCol h2 {
   color: #E8EBE4;
@@ -256,7 +257,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #748CAB;
+  background-color: #E8EBE4;
 }
 .infoSection #expCol h2 {
   color: #0D1321;
