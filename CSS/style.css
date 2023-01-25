@@ -75,6 +75,9 @@ body main {
 
 header {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 @media (max-width: 750px) {
   header {
@@ -89,7 +92,7 @@ header {
   header .navMenuShowing {
     position: absolute;
     left: calc(65vw - 3.5em);
-    top: calc(24vw - 4em);
+    top: 0px;
     background-color: #E8EBE4;
     color: #0D1321;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -106,9 +109,9 @@ header {
     color: #0D1321;
   }
   header .burger {
-    position: absolute;
-    left: calc(100vw - 3.5em);
-    top: calc(30vw - 4em);
+    position: relative;
+    left: 85vw;
+    top: 50px;
     color: #1D2D44;
   }
 }
